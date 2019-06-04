@@ -1,0 +1,29 @@
+<view class="i-index-demo">
+    <i-tabs current="{{ current }}" bindchange="handleChange">
+      <i-tab key="tab1" title="大陆"></i-tab>
+      <i-tab key="tab2" title="海外/地区"></i-tab>
+    </i-tabs>
+    <i-index height="100%" bind:change="onChange">
+        <i-index-item 
+            
+            wx:for="{{ cities }}" 
+            wx:for-index="index" 
+            wx:key="{{index}}" 
+            wx:for-item="item" name="{{item.key}}">
+            <view 
+                catchtap='selectedItem'
+                data-id="{{in}}"
+                data-key="{{item.key}}"
+                class="i-index-demo-item" 
+                wx:for="{{item.list}}" 
+                wx:for-index="in" 
+                wx:key="{{in}}" 
+                wx:for-item="it">
+                {{it.name}}
+            </view>
+        </i-index-item>
+        
+    </i-index>
+</view>
+ <i-spin fix  wx:if="{{isLoading}}">
+</i-spin>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-index": "/lib/iview/index/index",
+    "i-index-item": "/lib/iview/index-item/index",
+    "i-tabs": "/lib/iview/tabs/index",
+    "i-tab": "/lib/iview/tab/index",
+    "i-spin": "/lib/iview/spin/index",
+    "i-icon": "/lib/iview/icon/index"
+  }
+}
